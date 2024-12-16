@@ -1,0 +1,209 @@
+ @font-face {
+     font-family: "young-serif-regular";
+     src: url("assets/fonts/young-serif/YoungSerif-Regular.ttf") format("truetype");
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: "outfit-regular";
+     src: url("assets/fonts/outfit/static/Outfit-Regular.ttf") format("truetype");
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: "outfit-semi-bold";
+     src: url("assets/fonts/outfit/static/Outfit-SemiBold.ttf") format("truetype");
+     font-display: swap;
+ }
+
+ @font-face {
+     font-family: "outfit-bold";
+     src: url("assets/fonts/outfit/static/Outfit-Bold.ttf") format("truetype");
+     font-display: swap;
+ }
+
+
+ :root {
+     --brown: hsl(14, 45%, 36%);
+     --white: hsl(0, 0%, 100%);
+     --stone100: hsl(30, 54%, 90%);
+     --stone150: hsl(30, 18%, 87%);
+     --stone600: hsl(30, 10%, 34%);
+     --stone900: hsl(24, 5%, 18%);
+     --rose50: hsl(330, 100%, 98%);
+     --rose800: hsl(332, 51%, 32%);
+
+
+     --regular-font: 'young-serif-regular', sans-serif;
+     --outfit-regular-font: 'outfit-regular', sans-serif;
+     --semi-bold-font: 'outfit-semi-bold', sans-serif;
+     --bold-font: 'outfit-bold', sans-serif;
+ }
+
+ .text-preset-1 {
+     font-size: 2.5rem;
+     line-height: 100%;
+     font-family: var(--regular-font);
+ }
+
+ .text-preset-2 {
+     font-size: 1.75rem;
+     line-height: 100%;
+     font-family: var(--regular-font);
+ }
+
+ .text-preset-3 {
+     font-size: 1.25rem;
+     line-height: 100%;
+     font-family: var(--semi-bold-font);
+ }
+
+ .text-preset-4 {
+     font-size: 1rem;
+     line-height: 150%;
+     font-family: var(--outfit-regular-font);
+     color: var(--stone600);
+ }
+
+ .text-preset-4-bold {
+     font-size: 1rem;
+     line-height: 150%;
+     font-family: var(--bold-font);
+ }
+
+ * {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+ }
+
+ .body {
+     font-size: 1rem;
+     line-height: 150%;
+     font-family: var(--outfit-regular-font);
+ }
+
+ .container {
+     background-color: var(--stone100);
+     display: flex;
+     justify-content: center;
+     padding: 3rem 8rem 3rem 8rem;
+     min-height: 100vh;
+
+     .card {
+         background-color: var(--white);
+         max-width: 736px;
+         max-height: 1700px;
+         padding: 2.5rem;
+         display: flex;
+         flex-direction: column;
+         gap: 2.5rem;
+         border-radius: 1.5rem;
+
+
+         .illustration img {
+             max-width: 656px;
+             max-height: 300px;
+             border-radius: 0.75rem;
+         }
+
+         @media (max-width: 767px) {
+             .illustration img {
+                 width: 100%;
+                 border-radius: 0;
+                 padding: 0 !important;
+             }
+         }
+
+         .recipe {
+             display: grid;
+             row-gap: 2rem;
+
+             .prep-time {
+                 background-color: var(--rose50);
+                 border-radius: 0.75rem;
+                 padding: 1.5rem;
+
+                 h1 {
+                     margin-bottom: 1rem;
+                     color: var(--rose800);
+                 }
+             }
+
+             .section {
+                 display: grid;
+                 gap: 1.5rem;
+             }
+
+             h2 {
+                 font-size: 1.75rem;
+                 line-height: 100%;
+                 font-family: var(--regular-font);
+                 color: var(--brown);
+             }
+
+             li {
+                 font-size: 1rem;
+                 line-height: 150%;
+                 font-family: var(--outfit-regular-font);
+                 color: var(--stone600);
+                 margin-left: 1.5rem;
+                 padding-left: 1rem;
+             }
+
+             li::marker {
+                 color: var(--brown);
+                 font-size: 1rem;
+                 line-height: 150%;
+                 font-family: var(--bold-font);
+             }
+
+             li:not(:last-child) {
+                 margin-bottom: .5rem;
+             }
+         }
+
+         @media (max-width: 767px) {
+             .recipe {
+                 padding: 0 2rem 2.5rem 2rem;
+             }
+         }
+
+         .table {
+             display: grid;
+             gap: .75rem;
+
+             .row {
+                 display: grid;
+                 grid-template-columns: 2fr 2fr;
+                 padding: 0 2rem 0 2rem;
+             }
+
+             .row> :last-child {
+                 color: var(--brown) !important;
+                 font-family: var(--bold-font);
+             }
+         }
+
+         header {
+             display: grid;
+             gap: 1.5rem;
+         }
+     }
+ }
+
+ @media (max-width: 767px) {
+     .container {
+         padding: 0;
+     }
+
+     .card {
+         padding: 0 !important;
+         border-radius: 0 !important;
+         max-height: 100% !important;
+     }
+ }
+
+ hr {
+     border: 1px solid var(--stone150)
+ }
