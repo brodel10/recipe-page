@@ -18,28 +18,27 @@ The Recipe Page is a responsive web project designed to showcase a simple yet vi
 
 1. Recipe Content:
 
-- Displays a recipe for a "Simple Omelette" with a header, description, and image.
-- Sections for preparation time, ingredients, cooking instructions, and nutritional values.
+   - Displays a recipe for a "Simple Omelette" with a header, description, and image.
+   - Sections for preparation time, ingredients, cooking instructions, and nutritional values.
 
 2. Typography & Styling:
 
-- Custom fonts defined with @font-face, enhancing readability and aesthetics.
-- Preset text styles (e.g., text-preset-1, text-preset-4) for consistent sizing and spacing.
+   - Custom fonts defined with @font-face, enhancing readability and aesthetics.
+   - Preset text styles (e.g., text-preset-1, text-preset-4) for consistent sizing and spacing.
 
 3. Responsive Design:
 
-- Layout adapts for various screen sizes using media queries.
-- Adjustments for smaller devices include image resizing and layout simplifications.
+   - Layout adapts for various screen sizes using media queries.
+   - Adjustments for smaller devices include image resizing and layout simplifications.
 
 4. Custom Colors:
 
-- Leveraged CSS variables (--stone100, --brown, etc.) for consistent theming.
-- Styled components such as buttons, dividers, and text using a cohesive color palette.
+   - Leveraged CSS variables (--stone100, --brown, etc.) for consistent theming.
+   - Styled components such as buttons, dividers, and text using a cohesive color palette.
 
 5. Reusable Components:
-
-- CSS classes designed for reusability across similar pages or sections.
-- Grid and Flexbox used for alignment and spacing without redundancy.
+   - CSS classes designed for reusability across similar pages or sections.
+   - Grid and Flexbox used for alignment and spacing without redundancy.
 
 ### Screenshot
 
