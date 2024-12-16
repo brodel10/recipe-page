@@ -103,8 +103,8 @@
 
 
          .illustration img {
-             max-width: 656px;
-             max-height: 300px;
+             max-inline-size: 100%;
+             block-size: auto;
              border-radius: 0.75rem;
          }
 
